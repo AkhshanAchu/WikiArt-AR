@@ -1,0 +1,9 @@
+torch>=2.1.0
+torchvision>=0.16.0
+efficientnet-pytorch>=0.7.1
+geoopt>=0.5.0
+pandas>=1.5.0
+Pillow>=9.0.0
+numpy>=1.23.0
+# GPU only (comment out for CPU):
+# mamba-ssm>=1.2.0
