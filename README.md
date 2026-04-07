@@ -30,7 +30,7 @@
 
 ---
 
-## 🔍 Overview
+## Overview
 
 WikiArt CRNN-Mamba is a multi-task deep learning pipeline that simultaneously classifies artworks at three hierarchical levels — **style** (27 classes), **meta-genre** (9 classes), and **artist** (1114 classes) — while producing **Poincaré-ball embeddings** for artwork retrieval.
 
