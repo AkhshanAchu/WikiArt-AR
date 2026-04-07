@@ -1,4 +1,4 @@
-# 🎨 WikiArt CRNN-Mamba
+# WikiArt CRNN-Mamba
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" />
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Architecture](#-architecture)
@@ -43,7 +43,7 @@ It combines:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Input Image (224×224)
@@ -78,7 +78,7 @@ Input Image (224×224)
 
 ---
 
-## ✨ Features
+## Features
 
 - **Hierarchical multi-task classification** — Style, meta-genre, and artist heads share a single backbone; each head conditions on the coarser level above it
 - **Mamba SSM encoder** — State-space global context with automatic fallback to Multi-Head Attention on CPU / non-CUDA environments
@@ -90,7 +90,7 @@ Input Image (224×224)
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone the repo
 
@@ -118,7 +118,7 @@ pip install mamba-ssm
 
 ---
 
-## 📁 Dataset & CSV Format
+## Dataset & CSV Format
 
 The dataset is driven by a CSV file. Required columns:
 
@@ -150,7 +150,7 @@ The 27 fine-grained styles are automatically clustered into 9 meta-genres:
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Smoke test (no data required)
 
@@ -196,7 +196,7 @@ map_at_10 = compute_map(embeddings, labels, k=10)
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 All global constants live in `wikiart_crnn/config.py`:
 
@@ -211,7 +211,7 @@ All global constants live in `wikiart_crnn/config.py`:
 
 ---
 
-## 📤 Model Outputs
+## Model Outputs
 
 | Key | Shape | Description |
 |---|---|---|
@@ -224,7 +224,7 @@ All global constants live in `wikiart_crnn/config.py`:
 
 ---
 
-## 📉 Loss Function
+## Loss Function
 
 ```
 L = uncertainty_weighted(L_style, L_genre, L_artist)
@@ -240,7 +240,7 @@ L = uncertainty_weighted(L_style, L_genre, L_artist)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 wikiart_crnn/
@@ -271,3 +271,4 @@ wikiart_crnn/
         ├── hyperbolic_retrieval.py   Poincaré nearest-neighbour search
         └── evaluate.py               mAP@k evaluation
 ```
+Made with ❤️ by NiceGuy
